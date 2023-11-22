@@ -1,7 +1,7 @@
 {
   "name": "03-api-solid",
   "version": "1.0.0",
-  "description": "",
+  "description": "GymPass style app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,12 +13,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.9.3",
-    "tsup": "^8.0.1",
-    "tsx": "^4.2.0",
-    "typescript": "^5.3.2"
+    "@types/node": "20.9.3",
+    "tsup": "8.0.1",
+    "tsx": "4.2.0",
+    "typescript": "5.3.2"
   },
   "dependencies": {
-    "fastify": "^4.24.3"
+    "dotenv": "16.3.1",
+    "fastify": "4.24.3",
+    "zod": "3.22.4"
   }
 }
