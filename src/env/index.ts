@@ -2,8 +2,8 @@ import 'dotenv/config'
 import { z } from 'zod'
 
 const envSchema = z.object({
-  NODE_ENV: z.enum(['dev', 'test', 'production']).default('dev'), //enum uma entre as listadas
-  PORT: z.coerce.number().default(3333) //coerce converte o valor
+  NODE_ENV: z.enum(['dev', 'test', 'production']).default('dev'), // enum uma entre as listadas
+  PORT: z.coerce.number().default(3333), // coerce converte o valor
 })
 
 const _env = envSchema.safeParse(process.env)
